@@ -2,11 +2,16 @@
 
 Examples for the fusepy library (a work in progress).
 
+### factors.py
+
+Only admits integers as folder names, and populates the folder themselves with the integer factors.
+
 Usage:
 
-        $ mkdir /tmp/abc
-        $ python factors.py /tmp /tmp/abc &
-        $ cd /tmp/abc
-        $ mkdir 44
-        $ ls 44
-        1  11  2  22  4  44
+
+        $ mkdir /tmp/loopback /tmp/mountpoint
+        $ python factors.py /tmp/loopback /tmp/mountpoint &
+
+        $ mkdir /tmp/mountpoint/54334
+        $ ls /tmp/mountpoint/54334
+        1  14  2  27167  3881  54334  7  7762
